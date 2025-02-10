@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main File</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-blue-800">
+    <div class="container mx-auto bg-white mt-5 p-2" >
+        <div class="game_container max-w-96 mx-auto p-2 bg-red-300 rounded">
+        <h1 class="text-2xl font-bold underline text-center mb-3">Guessing Game</h1>
+        <div class="game bg-slate-100 rounded p-1 w-full">
+             <div class="head">
+                <p class="uppercase text-center font-bold mb-2 mt-2 text-4xl" id="word"></p>
+             </div>     
+             <div class="quiz">
+                <span class="italic">What do you think the word is?</span>
+             </div>  
+             <div class="answer">
+                <form>
+                    <input type="text" placeholder="Answer here" class="w-full p-2 rounded-lg outline-none mt-3 border">
+
+                    <div class="btn flex items-center justify-center">
+                        <button type="submit" class="px-4 py-2 bg-blue-500 mt-5 mb-5 rounded text-white">Submit</button>
+                    </div>
+                </form>
+             </div>
+             <div id="user_answer flex items-center justify-center w-full mb-5">
+                <span class="text-green-500 bg-green-100 w-full mx-auto p-1 rounded-full border border-green-600">Correct, the answer was <span id="word">"TABLE"</span></span>
+             </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
